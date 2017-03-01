@@ -1,0 +1,36 @@
+.content {
+	padding: 15px !important;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 5px 5px 0 0;
+}
+.custom-navbar {
+	    background-color: #23f1c1 !important;
+}
+.custom-button{
+		background-color: #23f1c1 !important;
+		color:white
+}
+.renk{
+	color: #00ffff;
+	float:left;
+	font-size: 30px;
+
+}
+.beyaz{
+	color:white;
+}
+#yukari
+{
+    z-index:100;    
+    position:fixed;    
+    bottom:10px;    
+    right:10px;   
+    display:none    
+}
+#yukari_boyut
+{
+    width:50px;   
+    height:50px    
+}

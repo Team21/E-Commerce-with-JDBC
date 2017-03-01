@@ -1,0 +1,4 @@
+driver=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/webeticaret   //VERÝTABANI OLUÞACAK
+user=root
+password=19951903Me
