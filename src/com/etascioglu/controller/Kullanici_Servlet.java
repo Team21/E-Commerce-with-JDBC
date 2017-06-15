@@ -23,7 +23,6 @@ public class Kullanici_Servlet extends HttpServlet {
     
     public Kullanici_Servlet() {
         super();
-        //TO DO kulanýcý eklyeceðz psotunda bðalayacaýz
         dao = new KullaniciDAO();
     }
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,12 +31,18 @@ public class Kullanici_Servlet extends HttpServlet {
 		kullanici.seteposta(request.getParameter("eposta"));
 		kullanici.setparola(request.getParameter("parola"));
 		
+		
 		dao.kullaniciekle(kullanici);
+		
 		RequestDispatcher view = request.getRequestDispatcher( "register.html" );
+		
 		request.setAttribute("userEmail", request.getParameter("email"));
         view.forward(request, response);
-        JOptionPane.showMessageDialog(null,"Kayýt Baþarýlý xd","BAÞARILI",JOptionPane.INFORMATION_MESSAGE);
+     
        
-      
+        	//response.sendRedirect("index.jsp");
+        	//request.getRequestDispatcher("login.jsp").forward(request, response);
+        	//JOptionPane.showMessageDialog(null,"Kayýt Baþarýlý-1","BAÞARILI-1",JOptionPane.INFORMATION_MESSAGE); 
+        
 	}
 }

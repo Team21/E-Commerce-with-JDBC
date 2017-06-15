@@ -70,7 +70,8 @@ pageEncoding="UTF-8"%>
 					<button type="button" class="btn navbar-btn custom-button">BİLGİSAYAR ÜRÜNLERİ</button>
 					<button type="button" class="btn navbar-btn custom-button">ELEKTRONİK,BİLGİSAYAR,TELEFON</button>
 					<% if(session.getAttribute("eposta") != null ){%>
-						<label>Hoşgeldiniz !</label><label><%= session.getAttribute("eposta") %></label>
+						<label>Hoşgeldiniz : </label>
+						<label><%= session.getAttribute("eposta") %></label>
 					<%} %>
 					</div>
 				</nav>

@@ -37,11 +37,9 @@ public class Giris extends HttpServlet {
 			session.setAttribute("kullanici_id", kullanici.getId());
 			if(kullanici.getadminmi()){
 				session.setAttribute("admin", kullanici.getadminmi());
-				response.sendRedirect("indexAdmin.jsp");		
-			
+				response.sendRedirect("indexAdmin.jsp");
 			}else{
 				response.sendRedirect("index.jsp");
-				
 			}
 		}else {				
 			request.setAttribute("status", "E-Posta adresiniz veya þifre hatalý");

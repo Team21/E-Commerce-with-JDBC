@@ -28,7 +28,7 @@ private Connection conn;
         }
 	}
 	//SÝL METODU
-	public void kullanicisil(int id) {
+	/*public void kullanicisil(int id) {
 		try {
             String query = "delete from kullanici where id=?";
             PreparedStatement preparedStatement = conn.prepareStatement(query);
@@ -38,8 +38,9 @@ private Connection conn;
         } catch (SQLException e) {
             e.printStackTrace();
         }
-	}
-	//GUNCELLE METODU
+	}*/
+	
+	/*
 	public void kullaniciguncelle(Kullanici kullanici) {
 		try {
             String query = "update kategori set eposta = ?, parola = ? where id = ?";
@@ -52,6 +53,7 @@ private Connection conn;
             e.printStackTrace();
         }
 	}
+	*/
 	// KAYIT YAPARKENKÝ KISIM
 	@Override
 	public boolean epostakontrol(String email,String parola) throws SQLException {
